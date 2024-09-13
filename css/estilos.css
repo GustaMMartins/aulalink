@@ -1,8 +1,31 @@
-#container{
-width: 80%;
-margin: 20px auto;
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Playwrite+CU:wght@100..400&family=Protest+Guerrilla&display=swap');
+
+* {
+padding: 0%;
+margin: 0%;
 
 }
+
+body{
+background-color: brown;
+font-family: "Playwrite CU", cursive;
+}
+
+
+#container{
+width: 80%;
+margin: auto;
+
+}
+
+#header,
+#nav,
+#content {
+  float:left;
+}
+ #nav{
+  display: flexbox;
+ }
 
 #header{
 height: 200px;
@@ -11,20 +34,61 @@ float: left;
 width: 100%;
 margin-bottom: 1%;
 background-color: brown;
+font-family: "Protest Guerrilla", sans-serif;
 }
 
-#nav{
-float: left;
-width: 20%;
-margin-right: 1%;
-background-color: antiquewhite;
 
+
+ #header #direita,
+#header #esquerda {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-top: 5%;
+}
+.futuro,.crianças,.pensenisso{
+    width: 50%;
 }
 
-#content{
 
-float: left;
-width: 79%;
-background-color: rgb(225, 139, 25);
-}
+
+
+    #content {
+        width: 75%;
+        float: left;
+        background-color: #fff;
+        padding: 2%;
+        text-align: justify;
+      }
+      
+
+
+      #nav ul {
+        list-style-type: none;
+        background-color: aqua;
+        
+        
+        }
+        #nav li a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        }
+        
+        #nav li a:hover{
+        background-color: blue;
+        color: #fff;
+        
+        }
+        
+        .active {
+          background-color: bisque;
+          
+        }
+        
+        #nav .active a {
+          color: #fff;
+        }
+        
 
